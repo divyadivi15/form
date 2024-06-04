@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/d4bfe62e8a.js" crossorigin="anonymous"></script>
+
+    <style>
+        section{
+            background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(./assets/images/photo-1504384308090-c894fdcc538d.jpg);
+            background-position: center;
+            background-size: cover;
+            min-height: 95vh;
+        }
+        form{
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container">
+
+                <a href="#" class="navbar-brand">
+                    <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" width="35" height="30" class="d-inline-block align-top">
+                    Bootstrap
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavBar"> 
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link"> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-success dropdown-toggle">Register</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 text-light text-center mt-5">
+                    <img src="./assets/images/icon.png" width="80%">
+                    <h1>Have a Course request?</h1>
+                    <p>Share it with us! We will try to make it available for you</p>
+                </div>
+                <div class="col-md-8  col-sm-12 my-3">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label" for="name">Full name</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Full name">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label  class="form-label">Previously,What did you learned from this course?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckDefault1">
+                                        <label class="form-check-label form-label" for="flexCheckDefault1">
+                                        HTML course
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckDefault2" >
+                                        <label class="form-check-label form-label" for="flexCheckDefault2">
+                                        CSS3 course
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckDefault3">
+                                        <label class="form-check-label form-label" for="flexCheckDefault3">
+                                        CSS flexbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label  class="form-label">Did you enrolled to the course?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label form-label" for="flexRadioDefault1">Yes</label>
+                                    </div>
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="formcheck-label form-label" for="flexRadioDefault2">No</label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">How did you find us?</label>
+                                        <select class="form-select form-control">
+                                            <option > Select</option>
+                                            <option > Social Media</option>
+                                            <option > By friends </option>
+    
+                                        </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label  class="form-label">Do you want to create a dedicated app for this?</label>
+                                        <input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label  class="form-label" for="flexRadioDefault1">Yes</label>
+
+                                        <input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label  class="form-label" for="flexRadioDefault1">No</label>
+
+                                        <input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label  class="form-label" for="flexRadioDefault1">Maybe</label>
+                                        
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="mb-3">
+                                    <label  class="form-label" for="email">Email</label>
+                                    <input type="text" class="form-control" name="email" placeholder="you@awesome.com">
+                                    
+                                </div>
+                                <div class="mb-3">
+                                    <label  class="form-label"></label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckDefault1">
+                                        <label class="form-check-label form-label" for="flexCheckDefault1">
+                                        HTML course
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckDefault2" >
+                                        <label class="form-check-label form-label" for="flexCheckDefault2">
+                                        CSS3 course
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckDefault3">
+                                        <label class="form-check-label form-label" for="flexCheckDefault3">
+                                        CSS flexbox
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label  class="form-label" for="">Do you have any tutorial requests?</label>
+
+                                </div>
+                                <div class="mb-3">
+                                    <textarea cols="40" rows="5" class="form-control" placeholder="Share with us"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary form-control"><i class="fa fa-external-link" aria-hidden="true"></i> Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>
